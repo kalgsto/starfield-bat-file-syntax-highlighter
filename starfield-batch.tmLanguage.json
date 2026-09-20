@@ -1,0 +1,56 @@
+{
+  "scopeName": "source.starfield-batch",
+  "name": "Starfield Batch Script",
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#strings" },
+    { "include": "#commands" },
+    { "include": "#ini-settings" },
+    { "include": "#hex-ids" },
+    { "include": "#numbers" },
+    { "include": "#arguments" }
+  ],
+  "repository": {
+    "comments": {
+      "match": ";.*$",
+      "name": "comment.line.semicolon.starfield"
+    },
+    "strings": {
+      "begin": "\"",
+      "end": "\"",
+      "name": "string.quoted.double.starfield",
+      "patterns": [
+        {
+          "match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\.([a-zA-Z_][a-zA-Z0-9_]*)\\b",
+          "captures": {
+            "1": { "name": "entity.name.class.starfield" },
+            "2": { "name": "support.function.starfield" }
+          }
+        }
+      ]
+    },
+    "commands": {
+      "match": "^\\s*(?:([a-zA-Z_][a-zA-Z0-9_]*)\\.)?([a-zA-Z_][a-zA-Z0-9_]*)\\b",
+      "captures": {
+        "1": { "name": "variable.language.target.starfield" },
+        "2": { "name": "support.function.command.starfield" }
+      }
+    },
+    "ini-settings": {
+      "match": "\\b[ubfisr][A-Z][a-zA-Z0-9_]*\\b",
+      "name": "variable.other.property.starfield"
+    },
+    "hex-ids": {
+      "match": "\\b(0[xX])?[0-9a-fA-F]{6,8}\\b",
+      "name": "constant.language.id.starfield"
+    },
+    "numbers": {
+      "match": "\\b[-+]?[0-9]*\\.?[0-9]+\\b",
+      "name": "constant.numeric.starfield"
+    },
+    "arguments": {
+      "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b",
+      "name": "variable.parameter.starfield"
+    }
+  }
+}

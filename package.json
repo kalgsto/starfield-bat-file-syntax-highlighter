@@ -1,0 +1,35 @@
+{
+  "name": "starfield-batch",
+  "publisher": "FearTheReaper",
+  "displayName": "Starfield Batch Script",
+  "description": "Syntax highlighting for Starfield console batch files",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "starfield-batch",
+        "aliases": [
+          "Starfield Batch",
+          "starfield-bat"
+        ],
+        "filenamePatterns": [
+          "**/Starfield/*.txt"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "starfield-batch",
+        "scopeName": "source.starfield-batch",
+        "path": "./starfield-batch.tmLanguage.json"
+      }
+    ]
+  }
+}
