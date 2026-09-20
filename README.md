@@ -16,8 +16,6 @@ This extension maps Starfield's engine syntax to standard VS Code TextMate scope
 
 ## Usage & Activation
 
-By default, VS Code treats all `.txt` files as Plain Text. To prevent this extension from hijacking your normal text files, it is designed with a specific targeting rule:
-
 **Automatic Activation:** The syntax highlighter will automatically activate for any `.txt` file located inside a folder named `Starfield` (e.g., `C:\Program Files (x86)\Steam\steamapps\common\Starfield\follower.txt`).
 
 **Manual Activation:** If you are editing a batch file outside of your main Starfield folder, you can manually activate the syntax highlighting:
