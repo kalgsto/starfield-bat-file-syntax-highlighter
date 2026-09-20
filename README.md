@@ -23,19 +23,20 @@ This extension maps Starfield's engine syntax to standard VS Code TextMate scope
 2. Click on **Plain Text** in the bottom right corner of the window (or press `Ctrl + K`, then `M`).
 3. Select **Starfield Batch** from the dropdown menu.
 
-## Installation (Manual Install)
+## Installation
 
-This extension is not hosted on the VS Code Marketplace, so you will need to install it manually:
+This extension is not currently hosted on the VS Code Marketplace, but you can easily install it using the packaged `.vsix` file:
 
-1. At the top of this repository page, click the green **Code** button and select **Download ZIP**.
-2. Extract the downloaded ZIP file.
-3. **Important:** Rename the extracted folder to exactly FearTheReaper.starfield-batch-1.0.0
-4. Move that renamed folder into your local VS Code extensions directory:
-   * **Windows:** `%USERPROFILE%\.vscode\extensions` (e.g., `C:\Users\YourUsername\.vscode\extensions`)
-   * **macOS/Linux:** `~/.vscode/extensions`
-5. Completely close and restart Visual Studio Code. 
+1. Download the `starfield-batch-1.0.0.vsix` file from this repository (click on the file in the list above, then click the **Download raw file** button on the right).
+2. Open Visual Studio Code.
+3. Open the Extensions view (`Ctrl + Shift + X`).
+4. Click the **...** (Views and More Actions) menu at the top right of the Extensions panel.
+5. Select **Install from VSIX...** from the dropdown menu.
+6. Locate and select the `.vsix` file you just downloaded.
 
-The extension will now be active and will automatically color-code `.txt` files located inside your Starfield directory.
+*(Alternatively, you can press `Ctrl + Shift + P` to open the Command Palette, type "Install from VSIX", and select the file.)*
+
+The extension will install immediately and will automatically color-code `.txt` files located inside your Starfield directory.
 
 ## License
 
