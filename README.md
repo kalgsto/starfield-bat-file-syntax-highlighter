@@ -1,4 +1,4 @@
-# Starfield Batch Script Syntax Highlighter
+# Starfield Batch File Syntax Highlighter
 
 A lightweight Visual Studio Code extension that provides dedicated syntax highlighting for Starfield console batch files. 
 
