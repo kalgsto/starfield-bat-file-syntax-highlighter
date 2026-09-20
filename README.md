@@ -25,14 +25,19 @@ By default, VS Code treats all `.txt` files as Plain Text. To prevent this exten
 2. Click on **Plain Text** in the bottom right corner of the window (or press `Ctrl + K`, then `M`).
 3. Select **Starfield Batch** from the dropdown menu.
 
-## Installation (NOTE: not published yet! Will update when I publish it)
+## Installation (Manual Install)
 
-You can install this extension directly from within Visual Studio Code:
-1. Open the Extensions view (`Ctrl + Shift + X`).
-2. Search for **Starfield Batch Script**.
-3. Click Install.
+This extension is not hosted on the VS Code Marketplace, so you will need to install it manually:
 
-*(Alternatively, you can download it directly from the [Visual Studio Marketplace](LINK_TO_YOUR_MARKETPLACE_PAGE_HERE).)*
+1. At the top of this repository page, click the green **Code** button and select **Download ZIP**.
+2. Extract the downloaded ZIP file.
+3. **Important:** Rename the extracted folder to exactly FearTheReaper.starfield-batch-1.0.0
+4. Move that renamed folder into your local VS Code extensions directory:
+   * **Windows:** `%USERPROFILE%\.vscode\extensions` (e.g., `C:\Users\YourUsername\.vscode\extensions`)
+   * **macOS/Linux:** `~/.vscode/extensions`
+5. Completely close and restart Visual Studio Code. 
+
+The extension will now be active and will automatically color-code `.txt` files located inside your Starfield directory.
 
 ## License
 
